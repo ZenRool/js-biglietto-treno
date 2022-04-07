@@ -7,11 +7,11 @@ const age = parseInt (prompt ("Quanti anni hai?"));
 let priceTicket = priceKm * km;
 // modifico il pezzo in base allo sconto 
 if (age < 18) {
-    discount = `${priceTicket} € meno il 20%`;
+    discount = `${priceTicket} € meno il 20% per i minori <br>`;
     priceTicket = priceTicket - ( priceTicket / 5);
 }
 else if (age >= 65){
-    discount = `${priceTicket} € meno il 40%`;
+    discount = `${priceTicket} € meno il 40% per lo sconto anziani <br>`;
     priceTicket = priceTicket - ( priceTicket / 2.5);
 }
-document.getElementById("receipt").innerHTML = `${priceTicket.toFixed(2)} €`;
+document.getElementById("receipt").innerHTML = `Il prezzo del biglietto è di ${discount} ${priceTicket.toFixed(2)} €`;
