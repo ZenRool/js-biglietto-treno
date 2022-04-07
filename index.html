@@ -17,12 +17,17 @@
     <main>
         <!-- ricevuta  -->
         <p id="receipt"></p>
-        <a href="#" class="conductor">
-            Paga il biglietto
-            <div class="train">
+        <div href="#" class="conductor">
+            <button  onclick="pay(); this.onclick=null;">
+                Paga il biglietto
+            </button>
+            <div id="train">
                 <img src="img/train.png" alt="treno">
             </div>
-        </a>
+        </div>
+        <div id="wallet">
+            
+        </div>
     </main>
     <!-- SCRIPT  -->
     <script src="js/script.js"></script>

@@ -25,17 +25,11 @@ h1 {
     overflow: hidden;
 }
 
-.train {
+#train {
     overflow: hidden;
     position: absolute;
     bottom: 0;
     right: 0;
-}
-.conductor:focus .train {
-    animation-name: ride;
-    animation-timing-function: linear;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
 }
 img {
     width: 250px;
@@ -47,4 +41,16 @@ img {
     100% {
         right: calc(100vw - 250px);
     }
+}
+#wallet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 120px;
+    color: darkred;
+    background-color: lightsteelblue;
 }
