@@ -30,12 +30,12 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* transition: 5s; */
+}
+.conductor:focus .train {
     animation-name: ride;
-    /* animation-delay: 10s; */
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
 }
 img {
     width: 250px;
@@ -43,9 +43,8 @@ img {
     overflow: hidden;
 }
 
-
 @keyframes ride {
     100% {
-        right: 100vw;
+        right: calc(100vw - 250px);
     }
 }
