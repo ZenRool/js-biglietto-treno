@@ -33,5 +33,5 @@ function pay() {
         return 1;
     }
     document.getElementById("wallet").innerHTML = wallet.toFixed(2) + "€";
-    document.getElementById("train").style.animation="ride 5s linear 1";
+    document.getElementById("train").style="right: calc(100vw - 250px);";
 }
